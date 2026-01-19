@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年1月16日 星期五</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <meta name="keywords" content="OpenAI, ChatGPT Go, Sam Altman, Codex, FLUX.2, VoxCPM, RAG, 推理优化, 人机协作, SambaNova, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+    /* 导航栏样式 */
+    .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000;
+    }
+    .nav-brand {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .nav-links {
+        display: flex;
+        gap: 16px;
+    }
+    .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: all 0.2s;
+    }
+    .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .theme-switcher {
+        display: flex;
+        gap: 6px;
+    }
+    .theme-btn {
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s;
+        opacity: 0.6;
+    }
+    .theme-btn:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .theme-btn.active {
+        opacity: 1;
+        box-shadow: 0 0 0 2px var(--accent-color);
+    }
+    /* 为导航栏留出空间 */
+    .container {
+        padding-top: 80px !important;
+    }
+    @media (max-width: 768px) {
+        .top-nav {
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px 16px;
+        }
+        .nav-links {
+            order: 3;
+            width: 100%;
+            justify-content: center;
+        }
+        .theme-switcher {
+            gap: 4px;
+        }
+        .theme-btn {
+            width: 28px;
+            height: 28px;
+            font-size: 12px;
+        }
+    }
+    </style>
+</head>
+<body data-theme="indigo">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand">🤖 AI Daily</div>
+        <div class="nav-links">
+            <a href="https://victor19911001.github.io/github-ai-trends/" class="nav-link">🌟 AI 精选</a>
+            <a href="https://victor19911001.github.io/github-ai-monitor/" class="nav-link">🔍 AI 监控</a>
+        </div>
+        <div class="theme-switcher">
+            <button class="theme-btn" data-theme="blue" title="柔和蓝色">💙</button>
+            <button class="theme-btn" data-theme="indigo" title="深靛蓝">💜</button>
+            <button class="theme-btn" data-theme="green" title="清新绿色">💚</button>
+            <button class="theme-btn" data-theme="orange" title="温暖橙色">🧡</button>
+            <button class="theme-btn" data-theme="pink" title="玫瑰粉色">💗</button>
+            <button class="theme-btn" data-theme="teal" title="冷色青绿">💎</button>
+            <button class="theme-btn" data-theme="gray" title="中性灰色">🤍</button>
+        </div>
+    </nav>
+
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年1月16日 星期五</div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="summary-card">
+                <h2 class="section-title">📌 今日核心摘要</h2>
+                <ul class="summary-list">
+                <li class="summary-item">OpenAI 推出 $8/月 ChatGPT Go 订阅计划，并开始在免费版和 Go 版中测试广告。</li>
+                <li class="summary-item">Sam Altman 预告超快速 Codex 模型，OpenAI 持续优化记忆功能与推理速度。</li>
+                <li class="summary-item">代理工具链向“文件优先”检索与“人机协作”模式演进，RAG 静态分块技术面临重构。</li>
+                <li class="summary-item">推理端技术爆发，多向量检索与实时无 Token 语音合成（VoxCPM）取得重要突破。</li>
+                <li class="summary-item">轻量化模型 FLUX.2 [klein] 发布，主打 sub-second 推理速度与 Apache-2.0 开源协议。</li>
+                </ul>
+            </section>
+
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">💼</span>
+                    <h2 class="category-title">产品动态</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">ChatGPT 推出 Go 订阅计划并测试广告</h3>
+                        <a href="https://news.smol.ai/issues/26-01-16-chatgpt-ads/" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">OpenAI 推出每月 8 美元的低价订阅，包含 GPT-5.2 instant 使用权，同时在免费版和 Go 版测试广告。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#ChatGPT</span> <span class="tag">#商业化</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Anthropic Cowork 推动代理编排主流化</h3>
+                        <a href="https://twitter.com/alexalbert__/status/2012230110745702563" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Anthropic 的 Cowork 产品信号显示代理编排工具正成为主流，强调人机协作作为可靠性倍增器。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#AI Agent</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🤖</span>
+                    <h2 class="category-title">模型发布</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">FLUX.2 [klein] 轻量化图像模型发布</h3>
+                        <a href="https://twitter.com/vllm_project/status/2012110024294965406" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Black Forest Labs 发布 4B 参数模型，支持 sub-second 推理，采用 Apache-2.0 协议。</p>
+                    <div class="item-tags"><span class="tag">#Black Forest Labs</span> <span class="tag">#FLUX.2</span> <span class="tag">#图像生成</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">VoxCPM：实时无 Token 语音合成</h3>
+                        <a href="https://twitter.com/LiorOnAI/status/2012133013967044755" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">OpenBMB 开源 VoxCPM，支持实时流式语音克隆，避免了离散音频 Token 带来的伪影。</p>
+                    <div class="item-tags"><span class="tag">#OpenBMB</span> <span class="tag">#TTS</span> <span class="tag">#语音克隆</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Ultralytics 发布 YOLO26 系列</h3>
+                        <a href="https://twitter.com/mervenoyann/status/2012121123018924033" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">包含 30 个小于 50M 参数的模型，涵盖检测、分割等任务，支持 CPU 实时运行。</p>
+                    <div class="item-tags"><span class="tag">#Ultralytics</span> <span class="tag">#计算机视觉</span> <span class="tag">#边缘计算</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h2 class="category-title">工具框架</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Very Fast Codex 即将到来</h3>
+                        <a href="https://twitter.com/sama/status/2012243893744443706" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Sam Altman 预告超快速 Codex 模型，开发者生态正关注速度与智能之间的权衡。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#Codex</span> <span class="tag">#代码助手</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">SpecStory 开源代理会话 CLI</h3>
+                        <a href="https://twitter.com/doesdatmaksense/status/2012209297380544940" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">开源工具用于规范代理会话契约，支持将 Claude Code 或 Codex 远程同步至手机。</p>
+                    <div class="item-tags"><span class="tag">#开源</span> <span class="tag">#CLI</span> <span class="tag">#Agent</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2 class="category-title">学术研究</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">RAG 静态分块技术趋于过时</h3>
+                        <a href="https://twitter.com/jerryjliu0/status/2012273236042559802" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Jerry Liu 认为文件优先的动态检索正在取代脆落的静态分块管道，提升了代理处理文档的灵活性。</p>
+                    <div class="item-tags"><span class="tag">#RAG</span> <span class="tag">#LlamaIndex</span> <span class="tag">#检索增强</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">多向量检索助力小模型逆袭</h3>
+                        <a href="https://twitter.com/aaxsh18/status/2012124348392583584" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">研究表明 32M 参数的多向量模型在检索表现上可媲美 8B 参数的基准模型。</p>
+                    <div class="item-tags"><span class="tag">#多向量检索</span> <span class="tag">#ColBERT</span> <span class="tag">#模型压缩</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🏆</span>
+                    <h2 class="category-title">行业事件</h2>
+                    <span class="category-count">1</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">AI 数据中心功耗达 30 GW</h3>
+                        <a href="https://twitter.com/EpochAIResearch/status/2012303496465498490" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Epoch AI 估算全球 AI 数据中心总容量已相当于纽约州高峰用电量，凸显能源挑战。</p>
+                    <div class="item-tags"><span class="tag">#算力基础设施</span> <span class="tag">#能源</span> <span class="tag">#Epoch AI</span></div>
+                </article>
+
+                </div>
+            </section>
+
+
+        <footer class="keywords-footer">
+            <p>#关键词: OpenAI | ChatGPT Go | Sam Altman | Codex | FLUX.2 | VoxCPM | RAG | 推理优化 | 人机协作 | SambaNova</p>
+        </footer>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        // 从 localStorage 读取保存的主题
+        const savedTheme = localStorage.getItem('ai-daily-theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+        }
+        
+        // 初始化主题按钮状态
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentTheme = document.body.getAttribute('data-theme') || 'blue';
+            const btns = document.querySelectorAll('.theme-btn');
+            btns.forEach(btn => {
+                if (btn.getAttribute('data-theme') === currentTheme) {
+                    btn.classList.add('active');
+                }
+                btn.addEventListener('click', function() {
+                    const theme = this.getAttribute('data-theme');
+                    document.body.setAttribute('data-theme', theme);
+                    localStorage.setItem('ai-daily-theme', theme);
+                    btns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

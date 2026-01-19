@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026-01-17 - 暂无资讯</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+    /* 导航栏样式 */
+    .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000;
+    }
+    .nav-brand {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .nav-links {
+        display: flex;
+        gap: 16px;
+    }
+    .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: all 0.2s;
+    }
+    .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .theme-switcher {
+        display: flex;
+        gap: 6px;
+    }
+    .theme-btn {
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s;
+        opacity: 0.6;
+    }
+    .theme-btn:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .theme-btn.active {
+        opacity: 1;
+        box-shadow: 0 0 0 2px var(--accent-color);
+    }
+    /* 为导航栏留出空间 */
+    .container {
+        padding-top: 80px !important;
+    }
+    @media (max-width: 768px) {
+        .top-nav {
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px 16px;
+        }
+        .nav-links {
+            order: 3;
+            width: 100%;
+            justify-content: center;
+        }
+        .theme-switcher {
+            gap: 4px;
+        }
+        .theme-btn {
+            width: 28px;
+            height: 28px;
+            font-size: 12px;
+        }
+    }
+    </style>
+</head>
+<body data-theme="gray">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand">🤖 AI Daily</div>
+        <div class="nav-links">
+            <a href="https://victor19911001.github.io/github-ai-trends/" class="nav-link">🌟 AI 精选</a>
+            <a href="https://victor19911001.github.io/github-ai-monitor/" class="nav-link">🔍 AI 监控</a>
+        </div>
+        <div class="theme-switcher">
+            <button class="theme-btn" data-theme="blue" title="柔和蓝色">💙</button>
+            <button class="theme-btn" data-theme="indigo" title="深靛蓝">💜</button>
+            <button class="theme-btn" data-theme="green" title="清新绿色">💚</button>
+            <button class="theme-btn" data-theme="orange" title="温暖橙色">🧡</button>
+            <button class="theme-btn" data-theme="pink" title="玫瑰粉色">💗</button>
+            <button class="theme-btn" data-theme="teal" title="冷色青绿">💎</button>
+            <button class="theme-btn" data-theme="gray" title="中性灰色">🤍</button>
+        </div>
+    </nav>
+
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年1月17日 星期六</div>
+        </header>
+
+        <main class="main-content">
+            <div class="empty-state">
+                <div class="empty-icon">📭</div>
+                <h2>今日暂无资讯</h2>
+                <p>目标日期: <strong>2026-01-17</strong></p>
+                <p>原因: 今日暂无资讯</p>
+                <a href="index.html" class="btn-primary">返回首页</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 自动生成</p>
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        // 从 localStorage 读取保存的主题
+        const savedTheme = localStorage.getItem('ai-daily-theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+        }
+        
+        // 初始化主题按钮状态
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentTheme = document.body.getAttribute('data-theme') || 'blue';
+            const btns = document.querySelectorAll('.theme-btn');
+            btns.forEach(btn => {
+                if (btn.getAttribute('data-theme') === currentTheme) {
+                    btn.classList.add('active');
+                }
+                btn.addEventListener('click', function() {
+                    const theme = this.getAttribute('data-theme');
+                    document.body.setAttribute('data-theme', theme);
+                    localStorage.setItem('ai-daily-theme', theme);
+                    btns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

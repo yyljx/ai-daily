@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暂无资讯 - 2026-02-01 - AI Daily</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            900: '#0d1117',
+                            800: '#161b22',
+                            700: '#30363d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+
+    <style>
+    /* 导航栏样式 */
+    .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000;
+    }
+    .nav-brand {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .nav-links {
+        display: flex;
+        gap: 16px;
+    }
+    .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: all 0.2s;
+    }
+    .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .theme-switcher {
+        display: flex;
+        gap: 6px;
+    }
+    .theme-btn {
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s;
+        opacity: 0.6;
+    }
+    .theme-btn:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .theme-btn.active {
+        opacity: 1;
+        box-shadow: 0 0 0 2px var(--accent-color);
+    }
+    /* 为导航栏留出空间 */
+    .container {
+        padding-top: 80px !important;
+    }
+    @media (max-width: 768px) {
+        .top-nav {
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px 16px;
+        }
+        .nav-links {
+            order: 3;
+            width: 100%;
+            justify-content: center;
+        }
+        .theme-switcher {
+            gap: 4px;
+        }
+        .theme-btn {
+            width: 28px;
+            height: 28px;
+            font-size: 12px;
+        }
+    }
+    </style>
+</head>
+<body class="min-h-screen pb-12 antialiased">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand">🤖 AI Daily</div>
+        <div class="nav-links">
+            <a href="https://yyljx.github.io/github-ai-trends/" class="nav-link">🌟 AI 精选</a>
+            <a href="https://yyljx.github.io/github-ai-monitor/" class="nav-link">🔍 AI 监控</a>
+        </div>
+        <div class="theme-switcher">
+            <button class="theme-btn" data-theme="blue" title="柔和蓝色">💙</button>
+            <button class="theme-btn" data-theme="indigo" title="深靛蓝">💜</button>
+            <button class="theme-btn" data-theme="green" title="清新绿色">💚</button>
+            <button class="theme-btn" data-theme="orange" title="温暖橙色">🧡</button>
+            <button class="theme-btn" data-theme="pink" title="玫瑰粉色">💗</button>
+            <button class="theme-btn" data-theme="teal" title="冷色青绿">💎</button>
+            <button class="theme-btn" data-theme="gray" title="中性灰色">🤍</button>
+        </div>
+    </nav>
+
+    
+        <nav class="sticky top-0 z-50 bg-[#0d1117]/80 backdrop-blur-md border-b border-gray-800 mb-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-center h-16 gap-4 overflow-x-auto">
+                    <a href="https://yyljx.github.io/github-ai-trends/" class="px-4 py-2 rounded-lg font-medium text-purple-400 hover:bg-purple-400/10 whitespace-nowrap transition-colors">
+                        📊 AI 精选 (Trends)
+                    </a>
+                    <a href="https://yyljx.github.io/github-ai-monitor/" class="px-4 py-2 rounded-lg font-medium text-sky-400 hover:bg-sky-400/10 whitespace-nowrap transition-colors">
+                        📡 AI 监控 (Monitor)
+                    </a>
+                    <a href="https://yyljx.github.io/ai-daily/" class="px-4 py-2 rounded-lg font-medium text-green-400 bg-green-400/10 border border-green-400/20 whitespace-nowrap transition-colors">
+                        🤖 AI 日报 (Daily)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+            <div class="flex flex-col items-center justify-center min-h-[60vh] text-center">
+                <div class="text-6xl mb-6">📭</div>
+                <h2 class="text-2xl font-bold text-white mb-4">今日暂无资讯</h2>
+                <p class="text-gray-400 mb-2">目标日期: <span class="font-mono text-gray-300">2026-02-01</span></p>
+                <p class="text-gray-500 mb-8">今日暂无资讯</p>
+                <a href="index.html" class="px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">返回首页</a>
+            </div>
+            
+        
+        <footer class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        // 从 localStorage 读取保存的主题
+        const savedTheme = localStorage.getItem('ai-daily-theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+        }
+        
+        // 初始化主题按钮状态
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentTheme = document.body.getAttribute('data-theme') || 'blue';
+            const btns = document.querySelectorAll('.theme-btn');
+            btns.forEach(btn => {
+                if (btn.getAttribute('data-theme') === currentTheme) {
+                    btn.classList.add('active');
+                }
+                btn.addEventListener('click', function() {
+                    const theme = this.getAttribute('data-theme');
+                    document.body.setAttribute('data-theme', theme);
+                    localStorage.setItem('ai-daily-theme', theme);
+                    btns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

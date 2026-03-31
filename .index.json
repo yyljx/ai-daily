@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-03-30",
+    "url": "2026-03-30.html",
+    "summary": "Anthropic 为 Claude Code 增加“计算机使用”功能，实现从代码编写到 UI 验证的自动化闭环。",
+    "timestamp": "2026-03-31T12:01:40.451595"
+  },
+  {
     "date": "2026-03-27",
     "url": "2026-03-27.html",
     "summary": "Anthropic 泄露新旗舰模型 Capybara，性能超越 Opus，主打编码与推理。",

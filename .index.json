@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-01",
+    "url": "2026-04-01.html",
+    "summary": "Arcee 发布 400B 开源推理模型 Trinity，性能直逼 Opus 4.6，支持本地部署与微调。",
+    "timestamp": "2026-04-03T00:01:37.027301"
+  },
+  {
     "date": "2026-03-30",
     "url": "2026-03-30.html",
     "summary": "Anthropic 为 Claude Code 引入计算机使用功能，实现从代码编写到 UI 验证的闭环。",

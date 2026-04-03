@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年4月2日 - AI Daily</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            900: '#0d1117',
+                            800: '#161b22',
+                            700: '#30363d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+
+    <style>
+    /* 导航栏样式 */
+    .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000;
+    }
+    .nav-brand {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .nav-links {
+        display: flex;
+        gap: 16px;
+    }
+    .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: all 0.2s;
+    }
+    .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .theme-switcher {
+        display: flex;
+        gap: 6px;
+    }
+    .theme-btn {
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s;
+        opacity: 0.6;
+    }
+    .theme-btn:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .theme-btn.active {
+        opacity: 1;
+        box-shadow: 0 0 0 2px var(--accent-color);
+    }
+    /* 为导航栏留出空间 */
+    .container {
+        padding-top: 80px !important;
+    }
+    @media (max-width: 768px) {
+        .top-nav {
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px 16px;
+        }
+        .nav-links {
+            order: 3;
+            width: 100%;
+            justify-content: center;
+        }
+        .theme-switcher {
+            gap: 4px;
+        }
+        .theme-btn {
+            width: 28px;
+            height: 28px;
+            font-size: 12px;
+        }
+    }
+    </style>
+</head>
+<body class="min-h-screen pb-12 antialiased">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand">🤖 AI Daily</div>
+        <div class="nav-links">
+            <a href="https://yyljx.github.io/github-ai-trends/" class="nav-link">🌟 AI 精选</a>
+            <a href="https://yyljx.github.io/github-ai-monitor/" class="nav-link">🔍 AI 监控</a>
+        </div>
+        <div class="theme-switcher">
+            <button class="theme-btn" data-theme="blue" title="柔和蓝色">💙</button>
+            <button class="theme-btn" data-theme="indigo" title="深靛蓝">💜</button>
+            <button class="theme-btn" data-theme="green" title="清新绿色">💚</button>
+            <button class="theme-btn" data-theme="orange" title="温暖橙色">🧡</button>
+            <button class="theme-btn" data-theme="pink" title="玫瑰粉色">💗</button>
+            <button class="theme-btn" data-theme="teal" title="冷色青绿">💎</button>
+            <button class="theme-btn" data-theme="gray" title="中性灰色">🤍</button>
+        </div>
+    </nav>
+
+    
+        <nav class="sticky top-0 z-50 bg-[#0d1117]/80 backdrop-blur-md border-b border-gray-800 mb-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-center h-16 gap-4 overflow-x-auto">
+                    <a href="https://yyljx.github.io/github-ai-trends/" class="px-4 py-2 rounded-lg font-medium text-purple-400 hover:bg-purple-400/10 whitespace-nowrap transition-colors">
+                        📊 AI 精选 (Trends)
+                    </a>
+                    <a href="https://yyljx.github.io/github-ai-monitor/" class="px-4 py-2 rounded-lg font-medium text-sky-400 hover:bg-sky-400/10 whitespace-nowrap transition-colors">
+                        📡 AI 监控 (Monitor)
+                    </a>
+                    <a href="https://yyljx.github.io/ai-daily/" class="px-4 py-2 rounded-lg font-medium text-green-400 bg-green-400/10 border border-green-400/20 whitespace-nowrap transition-colors">
+                        🤖 AI 日报 (Daily)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <header class="text-center mb-12">
+            <div class="inline-flex items-center justify-center p-3 bg-gray-800 rounded-2xl mb-6 shadow-lg shadow-柔和蓝色-900/20">
+                <span class="text-4xl">🤖</span>
+            </div>
+            <h1 class="text-4xl font-bold text-white mb-3 tracking-tight">AI Daily 资讯日报</h1>
+            <div class="inline-block px-4 py-1.5 rounded-full bg-gray-800 border border-gray-700 text-gray-400 text-sm">
+                📅 2026年4月2日
+            </div>
+        </header>
+        
+            <section class="mb-12 bg-gray-800/50 border border-gray-700/50 rounded-2xl p-8 backdrop-blur-sm">
+                <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    📌 今日核心摘要
+                </h2>
+                <ul class="space-y-4">
+                    <li class="pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-blue-400 text-gray-300 leading-relaxed">Google 发布 Gemma 4 系列模型，采用 Apache 2.0 协议，主打推理与智能体能力。</li><li class="pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-blue-400 text-gray-300 leading-relaxed">Gemma 4 31B 登顶 Arena 美国开源模型榜首，支持 256K 长文本及原生多模态。</li><li class="pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-blue-400 text-gray-300 leading-relaxed">Anthropic 研究揭示 Claude 内部“情感向量”，可通过调节概念表示直接改变模型行为。</li><li class="pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-blue-400 text-gray-300 leading-relaxed">开源生态迅速响应，llama.cpp、vLLM 及 Axolotl 等工具实现对新模型的零日支持。</li><li class="pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-blue-400 text-gray-300 leading-relaxed">OpenAI 将 ChatGPT 引入苹果 CarPlay，Perplexity 推出税务辅助智能体工作流。</li>
+                </ul>
+            </section>
+            
+            <section class="mb-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl">🤖</span>
+                    <h2 class="text-2xl font-bold text-white">模型发布</h2>
+                    <span class="px-2.5 py-0.5 bg-gray-800 rounded-full text-xs text-gray-500 font-mono">2</span>
+                </div>
+                <div class="grid gap-4">
+                    
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">Gemma 4 系列模型正式发布</h3>
+                        <a href="https://news.smol.ai/issues/26-04-02-gemma-4/" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">Google 推出 31B 稠密版及 26B MoE 版等四款模型，转向 Apache 2.0 协议，优化推理与智能体流。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#Google</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#Gemma 4</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#开源模型</span>
+                    </div>
+                </article>
+                
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">Anthropic 揭示 Claude 情感向量</h3>
+                        <a href="https://x.com/AnthropicAI/status/2039749628737019925" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">研究发现模型内部存在情感概念表示，通过调节“冷静”或“绝望”向量可显著改变模型输出行为。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#Anthropic</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#可解释性</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#研究</span>
+                    </div>
+                </article>
+                
+                </div>
+            </section>
+            
+            <section class="mb-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl">💼</span>
+                    <h2 class="text-2xl font-bold text-white">产品动态</h2>
+                    <span class="px-2.5 py-0.5 bg-gray-800 rounded-full text-xs text-gray-500 font-mono">3</span>
+                </div>
+                <div class="grid gap-4">
+                    
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">ChatGPT 登陆苹果 CarPlay</h3>
+                        <a href="https://x.com/OpenAI/status/2039748699350532097" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">OpenAI 为 iOS 用户推出车载语音模式，支持在驾驶场景下通过 CarPlay 使用 ChatGPT。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#OpenAI</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#ChatGPT</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#CarPlay</span>
+                    </div>
+                </article>
+                
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">Perplexity 推出税务辅助智能体</h3>
+                        <a href="https://x.com/perplexity_ai/status/2039740898830073889" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">上线“Navigate my taxes”工作流，利用智能体能力辅助用户起草和审查美国联邦税表。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#Perplexity</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#智能体</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#税务</span>
+                    </div>
+                </article>
+                
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">Cursor 3 协作界面发布</h3>
+                        <a href="https://x.com/cursor_ai/status/2039768512894505086" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">推出全新的智能体协作界面，旨在通过更深度的 AI 集成提升开发者编程效率。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#Cursor</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#AI编程</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#工具</span>
+                    </div>
+                </article>
+                
+                </div>
+            </section>
+            
+            <section class="mb-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl">🛠️</span>
+                    <h2 class="text-2xl font-bold text-white">工具框架</h2>
+                    <span class="px-2.5 py-0.5 bg-gray-800 rounded-full text-xs text-gray-500 font-mono">3</span>
+                </div>
+                <div class="grid gap-4">
+                    
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">Gemma 4 生态系统全面适配</h3>
+                        <a href="https://x.com/ggerganov/status/2039744468899811419" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">llama.cpp、Ollama、vLLM 及 LM Studio 等主流框架在发布当日即实现对 Gemma 4 的支持。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#开源工具</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#推理框架</span>
+                    </div>
+                </article>
+                
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">Axolotl v0.16.x 发布</h3>
+                        <a href="https://x.com/winglian/status/2039739597287047384" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">大幅提升 MoE 与 LoRA 训练效率，支持异步 GRPO 训练，并同步支持 Gemma 4 微调。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#Axolotl</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#微调</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#训练工具</span>
+                    </div>
+                </article>
+                
+                <article class="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-colors">
+                    <div class="flex justify-between items-start mb-3 gap-4">
+                        <h3 class="text-lg font-semibold text-white leading-snug">LiteParse 开源文档解析器</h3>
+                        <a href="https://x.com/jerryjliu0/status/2039730277786980833" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium">阅读详情 →</a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">LlamaIndex 推出支持空间文本解析的工具，可高效处理带复杂表格的大型 PDF 文档。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#LlamaIndex</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#RAG</span><span class="px-2 py-0.5 bg-gray-700/50 rounded text-xs text-gray-400">#文档解析</span>
+                    </div>
+                </article>
+                
+                </div>
+            </section>
+            
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center">
+                <p class="text-sm text-gray-500">
+                    <span class="mr-2">🏷️ 关键词:</span>
+                    Gemma 4 • Google DeepMind • Anthropic • Apache 2.0 • MoE • 智能体 • OpenAI • Claude • llama.cpp • Perplexity
+                </p>
+            </div>
+            
+        
+        <footer class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        // 从 localStorage 读取保存的主题
+        const savedTheme = localStorage.getItem('ai-daily-theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+        }
+        
+        // 初始化主题按钮状态
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentTheme = document.body.getAttribute('data-theme') || 'blue';
+            const btns = document.querySelectorAll('.theme-btn');
+            btns.forEach(btn => {
+                if (btn.getAttribute('data-theme') === currentTheme) {
+                    btn.classList.add('active');
+                }
+                btn.addEventListener('click', function() {
+                    const theme = this.getAttribute('data-theme');
+                    document.body.setAttribute('data-theme', theme);
+                    localStorage.setItem('ai-daily-theme', theme);
+                    btns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

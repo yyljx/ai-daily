@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-04-13",
+    "url": "2026-04-13.html",
+    "summary": "Claude Mythos Preview 成为首个通过 AISI 端到端网络攻击测试的模型，展现极强攻防能力。",
+    "timestamp": "2026-04-15T00:01:39.545107"
+  },
+  {
     "date": "2026-04-10",
     "url": "2026-04-10.html",
     "summary": "GLM-5.1 编程能力跃升至 Code Arena 第三，性能超越 GPT-5.4 并比肩 Claude。",
@@ -172,11 +178,5 @@
     "url": "2026-01-22.html",
     "summary": "暂无资讯",
     "timestamp": "2026-01-25T00:01:49.103360"
-  },
-  {
-    "date": "2026-01-16",
-    "url": "2026-01-16.html",
-    "summary": "OpenAI 推出 $8/月 ChatGPT Go 订阅计划，并开始在免费版和 Go 版中测试广告。",
-    "timestamp": "2026-01-19T23:39:13.965299"
   }
 ]
